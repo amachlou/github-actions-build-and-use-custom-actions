@@ -3,6 +3,7 @@ description: Get & Cache dependencies custom action
 runs:
   using: "composite"
   steps:
+      shell: bash
     - name: Get code
       uses: actions/checkout@v3
     - name: Cache dependencies
@@ -16,5 +17,5 @@ runs:
       # if: steps.cache.outputs.cache-hit != 'true'
       run: npm ci
     - name: Install dependencies
-      shell: bash
+      # shell: bash
       run: echo '************************************************'
