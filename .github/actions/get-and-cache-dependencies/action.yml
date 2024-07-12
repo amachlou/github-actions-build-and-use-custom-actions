@@ -1,7 +1,7 @@
 name: Get & Cache dependencies
 description: Get & Cache dependencies custom action
 runs:
-  uses: "composite"
+  using: "composite"
   steps:
     # - name: Get code
     #   uses: actions/checkout@v3
