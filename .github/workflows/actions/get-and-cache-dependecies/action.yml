@@ -1,0 +1,13 @@
+name: Get & Cache dependencies
+description: Get & Cache dependencies custom action
+runs:
+  uses: "composite"
+  steps:
+    # - name: Get code
+    #   uses: actions/checkout@v3
+    - name: Cache dependencies
+      id: cache
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
