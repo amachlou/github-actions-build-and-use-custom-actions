@@ -6,8 +6,6 @@ runs:
     - name: Get code
       uses: actions/checkout@v3
     - name: Cache dependencies
-      shell: bash
-      run: 'test test test test'
       id: cache
       uses: actions/cache@v3
       with:
