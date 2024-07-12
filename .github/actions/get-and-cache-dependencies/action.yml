@@ -16,4 +16,5 @@ runs:
     #   # if: steps.cache.outputs.cache-hit != 'true'
       # run: npm ci
     - name: Install dependencies
+      shell: bash
       run: echo '************************************************'
