@@ -3,8 +3,8 @@ description: Get & Cache dependencies custom action
 runs:
   using: "composite"
   steps:
-    # - name: Get code
-    #   uses: actions/checkout@v3
+    - name: Get code
+      uses: actions/checkout@v3
     # - name: Cache dependencies
     #   run: 'test test test test'
     #   id: cache
