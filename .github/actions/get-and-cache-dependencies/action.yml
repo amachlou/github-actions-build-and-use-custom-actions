@@ -13,7 +13,7 @@ runs:
         key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
     - name: Install dependencies
       if: steps.cache.outputs.cache-hit != 'true'
-      # shell: bash
+      shell: bash
       run: npm ci
     - name: Install dependencies
       shell: bash
