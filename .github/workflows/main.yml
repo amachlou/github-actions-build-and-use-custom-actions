@@ -1,0 +1,19 @@
+name: Simple JavaScript Action
+
+on:
+  push:
+    branches:
+      - js-custom-action
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Simlple msg
+        run: echo 'Job runSuccessfully ..!'
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Run JavaScript Action
+        uses: ./.github/actions/js-action
