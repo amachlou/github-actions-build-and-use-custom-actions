@@ -13,7 +13,7 @@ jobs:
       - name: Simlple msg
         run: echo 'Job runSuccessfully ..!'
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Run JavaScript Action
         uses: ./.github/actions/js-action
